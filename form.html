@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple form</title>
+        <style type="text/css">
+            body
+            {
+                background-color: beige;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: large;
+            }
+            h1, h2
+            {
+                color: blue;
+            }
+            p
+            {
+                color: firebrick;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="www.exapmple.com/search.php">
+            <p>Search here:</p>
+            <input type="search" name="search">
+            <input type="submit" value="Search">
+        </form><br>
+        <form action="www.exapmple.com/login.php">
+            <h1>Form 1</h1>
+            <p>Username: 
+                <input type="text" name="username" size="15" maxlength="30" />
+            </p>
+            <p>
+                Password:
+                <input type="password" name="password" size="15" maxlength="30" />
+            </p>
+            <p>Comments:</p>
+                <textarea name="comments" cols="40" rows="10">Enter your comments......
+                </textarea>
+        </form><br>
+        <form action="www.example.com/profile.php">
+            <p>Select your favorite music:
+                <input type="radio" name="genre" value="rock">Rock
+                <input type="radio" name="genre" value="jazz">Jazz
+                <input type="radio" name="genre" value="pop">Pop
+            </p>
+        </form><br>
+        <form action="www.example.com/profile">
+            <p>Selet your music service:
+                <input type="checkbox" name="service" value="itunes">itunes
+                <input type="checkbox" name="service" value="youtube">Youtube
+            </p>
+        </form><br>
+        <form action="www.example.com/profile.php">
+            <p>Select your device:</p>
+            <select name="devices">
+                <option value="mobile">Mobile</option>
+                <option value="ipod" selected="selected">ipod</option>
+                <option value="computer">computer</option>
+            </select>
+        </form>
+        <h2>Multiple Selection:</h2>
+        <form action="www.example.com/profile.php">
+            <select name="instrument" size="4" multiple="multiple">
+                <option value="keyboard">Keyboard</option>
+                <option value="guitar" selected="selected">Guitar</option>
+                <option value="drams">Drams</option>
+                <option value="bass" selected="selected">Bass</option>
+                <option value="pepa">Pepa</option>
+            </select>
+        </form><br>
+        <form action="www.example.com/upload.php" method="post">
+            <input type="file" name="song"><br>
+            <input type="submit" name="upload"><br><br>
+            <input type="text" name="email">
+            <input type="submit" name="suscribe" value="suscribe">
+        </form><br>
+        <label>Age: <input type="text" name="age"></label><br>
+        Gender: <input type="radio" id="female" name="gender" value="f">
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gendar" value="m">
+        <label for="male">Male</label><br>
+        <form action="www.example.com/booking.php" method="post">
+            <label for="username">Date</label>
+            <input type="date" name="date">
+            <input type="submit" value="Submit">
+        </form>
+        <hr>
+        <center>
+            <fieldset>
+                <legend align="center">Contact Details:</legend>
+                <label>Email: <br /><input type="text" name="Email"></label><br />
+                <label>Phone no.: <br /><input type="text" name="phone"></label>
+            </fieldset>
+        </center><br>
+        <form action="www.example.com/suscribe.php">
+            <p>Enter your email:</p><br>
+            <input type="email" name="email">
+            <input type="submit" value="Submit">
+            <p>Enter your url:</p><br>
+            <input type="url" name="url">
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
